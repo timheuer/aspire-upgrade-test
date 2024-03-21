@@ -1,27 +1,27 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 // aspire.hosting
-var cache = builder.AddRedis("cache");
-var oracle = builder.AddOracleDatabase("db1");
-var mysql = builder.AddMySql("db2");
-var pgdb = builder.AddPostgres("db3");
-var kaf = builder.AddKafka("k1");
-var mongo = builder.AddMongoDB("db4");
-var mq = builder.AddRabbitMQ("mq1");
-var sql = builder.AddSqlServer("db5");
-var node = builder.AddNodeApp("node1", "");
+var cache = builder.AddRedis("cache"); //Aspire.Hosting.Redis
+var oracle = builder.AddOracleDatabase("db1"); //Aspire.Hosting.Oracle
+var mysql = builder.AddMySql("db2"); //Aspire.Hosting.MySql
+var pgdb = builder.AddPostgres("db3"); //Aspire.Hosting.PostreSQL
+var kaf = builder.AddKafka("k1"); //Aspire.Hosting.Kafka
+var mongo = builder.AddMongoDB("db4"); //Aspire.Hosting.MongoDB
+var mq = builder.AddRabbitMQ("mq1"); //Aspire.Hosting.RabbitMQ
+var sql = builder.AddSqlServer("db5"); //Aspire.Hosting.SqlServer
+var node = builder.AddNodeApp("node1", ""); //Aspire.Hosting.NodeJs
 
 // aspire.hosting.azure
-var appcfg = builder.AddAzureAppConfiguration("appconfig");
-var insights = builder.AddAzureApplicationInsights("insights");
-var cosmos = builder.AddAzureCosmosDB("cosmosdb");
-var kv = builder.AddAzureKeyVault("kv");
-var aoai = builder.AddAzureOpenAI("aoai");
-var search = builder.AddAzureSearch("azsearch");
-var bus = builder.AddAzureServiceBus("svcbus");
-var sr = builder.AddAzureSignalR("sr");
-var storage = builder.AddAzureStorage("storage");
-var bicep = builder.AddBicepTemplate("bicep1", "foo.bicep");
+var appcfg = builder.AddAzureAppConfiguration("appconfig"); //Aspire.Hosting.Azure.AppConfiguration
+var insights = builder.AddAzureApplicationInsights("insights"); //Aspire.Hosting.Azure.ApplicationInsights
+var cosmos = builder.AddAzureCosmosDB("cosmosdb"); //Aspire.Hosting.Azure.CosmosDB
+var kv = builder.AddAzureKeyVault("kv"); //Aspire.Hosting.Azure
+var aoai = builder.AddAzureOpenAI("aoai"); //Aspire.Hosting.Azure.CognitiveServices
+var search = builder.AddAzureSearch("azsearch"); //Aspire.Hosting.Azure.Search
+var bus = builder.AddAzureServiceBus("svcbus"); //Aspire.Hosting.Azure.ServiceBus
+var sr = builder.AddAzureSignalR("sr"); //Aspire.Hosting.Azure.SignalR
+var storage = builder.AddAzureStorage("storage"); //Aspire.Hosting.Azure.Storage
+var bicep = builder.AddBicepTemplate("bicep1", "foo.bicep"); //Aspire.Hosting.Azure
 
 
 var apiService = builder.AddProject<Projects.AspirePreview4UpgradeTester_ApiService>("apiservice");
