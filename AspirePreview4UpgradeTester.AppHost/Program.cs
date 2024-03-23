@@ -2,13 +2,16 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 // aspire.hosting
 var cache = builder.AddRedis("cache"); //Aspire.Hosting.Redis
-var oracle = builder.AddOracleDatabase("db1"); //Aspire.Hosting.Oracle
+var oracle = builder.AddOracleDatabase("db1")
+    .AddDatabase("baz"); //Aspire.Hosting.Oracle
 var mysql = builder.AddMySql("db2"); //Aspire.Hosting.MySql
-var pgdb = builder.AddPostgres("db3"); //Aspire.Hosting.PostreSQL
+var pgdb = builder.AddPostgres("db3")
+    .AddDatabase("foo"); //Aspire.Hosting.PostreSQL
 var kaf = builder.AddKafka("k1"); //Aspire.Hosting.Kafka
 var mongo = builder.AddMongoDB("db4"); //Aspire.Hosting.MongoDB
 var mq = builder.AddRabbitMQ("mq1"); //Aspire.Hosting.RabbitMQ
-var sql = builder.AddSqlServer("db5"); //Aspire.Hosting.SqlServer
+var sql = builder.AddSqlServer("db5")
+    .AddDatabase("bar"); //Aspire.Hosting.SqlServer
 var node = builder.AddNodeApp("node1", ""); //Aspire.Hosting.NodeJs
 
 // aspire.hosting.azure
