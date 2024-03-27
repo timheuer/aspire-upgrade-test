@@ -9,6 +9,9 @@
     <UserSecretsId>47dd39db-fb32-489b-8297-78a04aaa218d</UserSecretsId>
   </PropertyGroup>
 
+	<ItemGroup>
+		<ProjectCapability Include="DiagnoseCapabilities" />
+	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AspirePreview4UpgradeTester.ApiService\AspirePreview4UpgradeTester.ApiService.csproj" />
     <ProjectReference Include="..\AspirePreview4UpgradeTester.Web\AspirePreview4UpgradeTester.Web.csproj" />

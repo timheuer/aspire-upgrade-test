@@ -14,4 +14,8 @@
     <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.0.0-preview.5.24154.4" />
   </ItemGroup>
 
+	<ItemGroup>
+		<ProjectCapability Include="DiagnoseCapabilities" />
+	</ItemGroup>
+
 </Project>
