@@ -25,9 +25,12 @@ var bus = builder.AddAzureServiceBus("svcbus"); //Aspire.Hosting.Azure.ServiceBu
 var sr = builder.AddAzureSignalR("sr"); //Aspire.Hosting.Azure.SignalR
 var storage = builder.AddAzureStorage("storage"); //Aspire.Hosting.Azure.Storage
 var bicep = builder.AddBicepTemplate("bicep1", "foo.bicep"); //Aspire.Hosting.Azure
+var azsql = builder.AddSqlServer("db6")
+    .PublishAsAzureSqlDatabase();
 
 
-var apiService = builder.AddProject<Projects.AspirePreview4UpgradeTester_ApiService>("apiservice");
+var apiService = builder.AddProject<Projects.AspirePreview4UpgradeTester_ApiService>("apiservice")
+    .WithDaprSidecar("api");
 
 builder.AddProject<Projects.AspirePreview4UpgradeTester_Web>("webfrontend")
     .WithReference(cache)
