@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,19 +7,35 @@
     <IsAspireHost>true</IsAspireHost>
     <UserSecretsId>47dd39db-fb32-489b-8297-78a04aaa218d</UserSecretsId>
   </PropertyGroup>
-
-	<ItemGroup>
-		<ProjectCapability Include="DiagnoseCapabilities" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="DiagnoseCapabilities" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AspirePreview4UpgradeTester.ApiService\AspirePreview4UpgradeTester.ApiService.csproj" />
     <ProjectReference Include="..\AspirePreview4UpgradeTester.Web\AspirePreview4UpgradeTester.Web.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting" Version="8.0.0-preview.5.24201.12" />
     <PackageReference Include="Aspire.Hosting.Azure" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Oracle" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.MySql" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Kafka" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.MongoDB" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.AppConfiguration" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.ApplicationInsights" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.CosmosDB" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.KeyVault" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.CognitiveServices" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.Search" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.ServiceBus" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.SignalR" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.Storage" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.Azure.Sql" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.5.24201.12" />
     <PackageReference Include="Aspire.Hosting.Dapr" Version="8.0.0-preview.5.24201.12" />
   </ItemGroup>
-
 </Project>

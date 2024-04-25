@@ -6,9 +6,9 @@ builder.AddServiceDefaults();
 // Add services to the container.
 builder.Services.AddProblemDetails();
 
-builder.AddAzureOpenAI("aoai");
-builder.AddRabbitMQ("foorabbit");
-builder.AddKeyedRabbitMQ("foo2");
+builder.AddAzureOpenAIClient("aoai");
+builder.AddRabbitMQClient("foorabbit");
+builder.AddKeyedRabbitMQClient("foo2");
 
 var app = builder.Build();
 

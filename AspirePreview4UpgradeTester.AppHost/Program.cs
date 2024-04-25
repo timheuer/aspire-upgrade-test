@@ -2,7 +2,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 // aspire.hosting
 var cache = builder.AddRedis("cache"); //Aspire.Hosting.Redis
-var oracle = builder.AddOracleDatabase("db1")
+var oracle = builder.AddOracle("db1")
     .AddDatabase("baz"); //Aspire.Hosting.Oracle
 var mysql = builder.AddMySql("db2"); //Aspire.Hosting.MySql
 var pgdb = builder.AddPostgres("db3")
