@@ -9,6 +9,29 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Aspire.Azure.AI.OpenAI" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Data.Tables" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Messaging.EventHubs" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Messaging.ServiceBus" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Search.Documents" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Security.KeyVault" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Storage.Blobs" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Azure.Storage.Queues" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Confluent.Kafka" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Microsoft.Azure.Cosmos" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Microsoft.Data.SqlClient" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.Cosmos" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.MongoDB.Driver" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.MySqlConnector" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.NATS.Net" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Npgsql" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Oracle.EntityFrameworkCore" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Pomelo.EntityFrameworkCore.MySql" Version="8.0.0-preview.5.24201.12" />
     <PackageReference Include="Aspire.RabbitMQ.Client" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.Seq" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.StackExchange.Redis" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.StackExchange.Redis.DistributedCaching" Version="8.0.0-preview.5.24201.12" />
+    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.0.0-preview.5.24201.12" />
   </ItemGroup>
 </Project>
